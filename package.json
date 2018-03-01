@@ -1,0 +1,21 @@
+{
+  "name": "allure-attachment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rm -rf test-output && wdio wdio.conf.js",
+    "allure": "rm -rf allure-report && allure generate test-output/allure-results && allure open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.1",
+    "wdio-allure-reporter": "^0.3.2",
+    "webdriverio": "^4.8.0"
+  },
+  "devDependencies": {
+    "wdio-mocha-framework": "^0.5.11",
+    "wdio-selenium-standalone-service": "0.0.9"
+  }
+}
